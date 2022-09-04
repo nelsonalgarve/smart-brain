@@ -31,6 +31,9 @@ app.get('/', (req, res) => {
   res.send('success');
 })
 
+//HOME ROUTE
+app.get('/', (req, res) => {res.send('it is working')})
+
 //SIGNIN ROUTE
 app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt)})
 
